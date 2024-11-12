@@ -1,0 +1,11 @@
+<h1>Forcaster</h1>
+
+<%= render "address_form" %>
+
+<% if @result %>
+  <%= render "search_results" %>
+<% end %>
+
+<% if @cur_temp %>
+  <%= render "forcast" %>
+<% end %>

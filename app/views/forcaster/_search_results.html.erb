@@ -1,0 +1,10 @@
+<%= form_with class: 'address_results', url: "/forcast", method: :get do |form| %>
+    <% @result.each do |r| %>
+        <div class="address">
+            <%= form.radio_button :address_selection, "#{r.data["lat"]}, #{r.data["lon"]}, #{r.data["address"]["city"]}, #{r.data["postcode"]}}" %>
+            <%= form.label :address_selection, r.data["display_name"] %>
+        </div>
+    <% end %>
+    <%= form.submit "Select" %>
+<% end %>
+
