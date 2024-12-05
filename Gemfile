@@ -42,7 +42,7 @@ gem "thruster", require: false
 
 
 gem 'open-weather-ruby-client', '~> 0.6.0'
-gem 'geocoder', '~> 1.8', '>= 1.8.3'
+gem 'geocoder', '~> 1.8'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
